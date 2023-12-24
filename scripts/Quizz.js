@@ -157,7 +157,7 @@ const initApp = function(){
     let INT = setInterval(timer.updater.bind(timer),1000)
 
     const Home = () =>{
-        const homeTab = window.open('../public/index.html');
+        const homeTab = window.open('/public/index.html');
     }
 
     const goHome = document.getElementById('home');
@@ -167,7 +167,7 @@ const initApp = function(){
     goHomeMob.addEventListener('click', Home)
 
     const Abort = () =>{
-        const prepTab = window.open('../public/prepQuizz.html');
+        const prepTab = window.open('/public/prepQuizz.html');
     }
 
     const goPrep = document.getElementById('abort');
