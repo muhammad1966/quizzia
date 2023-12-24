@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/quizz.css">
+    <link rel="stylesheet" href="../styles/float.css">
+    <title>Quizia-Space</title>
+</head>
+<body>
+    <main>
+        <div class="space">
+            <div class="sidebar">
+                <div class="logo-space">
+                    <h3>Quizia</h3>
+                </div>
+                <div class="img-div">
+                    <img src="../assets/default-avatar.jpg" alt="avatar">
+                    <p id="user_name">Muhd Sanusi</p>
+                </div>
+                <div class="desc-p">
+                    <h3>Quizz Info</h3>
+                    <div class="desc">
+                        <p id="ans_subject">English</p>
+                        <p id="ans_mode">Lightning</p>
+                        <p id="ans_quest">60qts</p>
+                        <p id="ans_time">1 hour</p>
+                    </div>
+                </div>
+                <div class="ans-p">
+                    <h3>Questions Answered</h3>
+                    <div class="ans">
+                        <p id="quest_ans">0/0</p>
+                    </div>
+                </div>
+                <div class="cw-p">
+                    <h3>Correct and Wrong Answers</h3>
+                    <div class="cw">
+                        <p id="correct_ans">0</p>
+                        <p id="wrong_ans">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="space-q">
+                <div class="time">
+                    <h3 class="tm" id="time">
+                        <h3 id="hour">00</h3>
+                        
+                        <h3 id="minu">00</h3>
+                        
+                        <h3 id="second">00</h3>
+                    </h3>
+                </div>
+                <div class="space-nav">
+                    <i class="fa-solid fa-house" id="home" title="Home" style="font-size: 20px; color: black; cursor: pointer;"></i>
+                    <i class="fa-solid fa-circle-info" id="info" title="Quizz info" style="font-size: 20px; color: black; cursor: pointer;"></i>
+                    <i class="fa-solid fa-file-export" id="download_ans" title="Download answers" style="font-size: 20px; color: black; cursor: pointer;"></i>
+                    <i class="fa-solid fa-moon" id="dark_mode" title="Dark mode" style="font-size: 20px; color: black; display: none; cursor: pointer;"></i>
+                    <i class="fa-solid fa-sun" id="light_mode" title="Light mode" style="font-size: 20px; color: black; cursor: pointer;"></i>
+                    <i class="fa-solid fa-ban" id="abort" title="Abort quizz" style="font-size: 20px; color: black; cursor: pointer;"></i>
+                </div>
+
+                <div class="time-pop" id="time-pop">
+                    <p>Time is up!!</p>
+                    <h3>Do you want to retake the quizz?</h3>
+                    <div>
+                        <button id="yes">Yes</button>
+                        <button id="no">No</button>
+                    </div>
+                </div>
+
+                <div class="finish-pop" id="finish-pop">
+                    <p>That is the end of the quizz!!</p>
+                    <h3>You scored <span id="scored"></span> out of <span id="fi-qunumb"></span></h3>
+                    <p>Do you want to retake the quizz?</p>
+                    <div>
+                        <button id="YES">Yes</button>
+                        <button id="NO">No</button>
+                    </div>
+                </div>
+
+                <nav class="icons-mob">
+                    <input type="checkbox" class="menu-open" id="menu-open" href="#" name="menu-open">
+                    <label class="menu-open-button" for="menu-open">
+                        <span class="lines line-1"></span>
+                        <span class="lines line-2"></span>
+                        <span class="lines line-3"></span>
+                    </label>
+
+                    <a id="home_mob" href="#" class="menu-item home" style="background: rgb(80, 80, 80);">
+                        <i class="fa-solid fa-house" title="Home" style="font-size: 20px; color: black; cursor: pointer;"></i>
+                    </a>
+                    <a id="info_mob" href="#" class="menu-item info" style="background: rgb(80, 80, 80);">
+                        <i class="fa-solid fa-circle-info" title="Quizz info" style="font-size: 20px; color: black; cursor: pointer;"></i>
+                    </a>
+                    <a id="d_ans-mob" href="#" class="menu-item d-ans" style="background: rgb(80, 80, 80);">
+                        <i class="fa-solid fa-file-export" title="Download answers" style="font-size: 20px; color: black; cursor: pointer;"></i>
+                    </a>
+                    <a id="dark_mode-mob" href="#" class="menu-item" style="background: rgb(80, 80, 80);">
+                        <i class="fa-solid fa-moon" title="Dark mode" style="font-size: 20px; color: black; display: none; cursor: pointer;"></i>
+                    </a>
+                    <a id="light_mode-mob" href="#" class="menu-item light" style="background: rgb(80, 80, 80);">
+                        <i class="fa-solid fa-sun" title="Light mode" style="font-size: 20px; color: black; cursor: pointer;"></i>
+                    </a>
+                    <a id="abort_mob" href="#" class="menu-item cancel" style="background: rgb(80, 80, 80);">
+                        <i class="fa-solid fa-ban" title="Abort quizz" style="font-size: 20px; color: black; cursor: pointer;"></i>
+                    </a>
+                    
+                </nav>
+
+
+                <div class="score-p">
+                    <p>Score:<p class="score" id="score-mob">0/0</p></p>
+                </div>
+                <div class="question-p">
+                    <div class="question">
+                        <p id="question"></p>
+                    </div>
+                    <div class="answer-div">
+                        <div class="sas" id="a">
+                            <h3>A.</h3>
+                            <p id="option_a"></p>
+                        </div>
+                        <div class="sas" id="b">
+                            <h3>B.</h3>
+                            <p id="option_b"></p>
+                        </div>
+                        <div class="sas" id="c">
+                            <h3>C.</h3>
+                            <p id="option_c"></p>
+                        </div>
+                        <div class="sas" id="d">
+                            <h3>D.</h3>
+                            <p id="option_d"></p>
+                        </div>
+                        
+                    </div>
+                    <div class="next">
+                        <i class="fa-regular fa-circle-left left" id="1" style="font-size: 20px; color: rgb(80, 80, 80); cursor: pointer;"></i>
+                        <i class="fa-regular fa-circle-right right" id="next-n" style="font-size: 20px; color: rgb(80, 80, 80); cursor: pointer;"></i>
+                    </div>
+                    <div class="next-mob">
+                        <i class="fa-regular fa-circle-left left" style="font-size: 45px; color: rgb(80, 80, 80); cursor: pointer;"></i>
+                        <i class="fa-regular fa-circle-right right" id="next-mob"  style="font-size: 45px; color: rgb(80, 80, 80); cursor: pointer;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/45b4f2d63f.js" crossorigin="anonymous"></script>
+    <script src="../scripts/Quizz.js"></script>
+</body>
+</html>

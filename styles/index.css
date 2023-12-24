@@ -1,0 +1,530 @@
+@font-face{
+    font-family: logo;
+    src: url('../assets/Ephesis-Regular.ttf');
+}
+
+@font-face{
+    font-family: font;
+    src: url('../assets/Outfit-VariableFont_wght.ttf');
+}
+
+.start-quizz{
+    cursor: pointer;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height:100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    position: sticky;
+    top: 1px;
+    padding: 0 3rem;
+    justify-content: space-between;
+    background: black;
+    height: fit-content;
+    color: gray;
+    z-index: 100;
+}
+
+.logo{
+    flex: 1;
+    align-items: center;
+}
+
+.logo h3{
+    font-family: logo;
+    font-size: 32px;
+    margin: 0;
+
+}
+
+.navg{
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.navg a{
+    font-size: 22px;
+    color: gray;
+    text-decoration: none;
+    font-family: font;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+}
+
+.sign{
+    display: flex;
+    flex: 1;
+    font-family: font;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sign p{
+    cursor: pointer;
+}
+
+.sign button, .mob-sign button{
+    padding: 0.5rem 1rem;
+    font-family: font;
+    font-weight: 600;
+    font-size: 17px;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    background:rgb(169, 54, 54);
+}
+
+.content{
+    display: flex;
+    background: black;
+    color: grey;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+}
+
+.cont-text{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 3rem 2rem;
+}
+
+.cont-text h1{
+    font-family: font;
+    color: whitesmoke;
+    font-size: 48px;
+}
+
+.cont-text p{
+    font-family: font;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 0;
+}
+
+.cont-text a{
+    cursor: pointer;
+    font-size: 20px;
+    font-family: font;
+    margin-top: 5rem;
+}
+
+.cont-img{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-img img{
+    width: 70%;
+    height: 100%;
+}
+
+.mob-menu{
+    display: flex;
+}
+
+.mob-menu-cancel{
+    display: none;
+}
+
+.mob-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:gray;
+    position: absolute;
+    right: 1rem;
+    top: 4rem;
+    padding: 4rem 3rem;
+    border-radius: 10px;
+    display: none;
+    
+
+}
+
+.mob-nav a{
+    text-decoration: none;
+    color:black;
+    font-family: font;
+    font-size: 20px;
+}
+
+.mob-nav nav{
+    display: flex;
+    flex-direction: column;
+}
+
+.mob-sign{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mob-sign p{
+    cursor: pointer;
+    font-family: font;
+    font-size: 18px;
+}
+
+
+
+.quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 5rem;
+}
+
+.quote div{
+    background:black;
+    position: relative;
+    color: gray;
+    border-radius: 50px;
+    padding: 4rem 3rem;
+    max-width: 800px;
+    box-shadow: 3px 3px 2rem rgba(0, 0, 0, 0.7);
+}
+
+.quott{
+    margin: 0;
+    position: relative;
+    font-family: font;
+    font-size: 35px;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+.quott::before{
+    content: '\201C';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-2rem);
+    transform: translateY(-2rem);
+    color: gray;
+    font-size: 100px;
+}
+
+.quott::after{
+    content: '\201D';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(2rem);
+    transform: translateY(4rem);
+    color: gray;
+    font-size: 100px;
+}
+
+.diff{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 3rem 4rem;
+
+}
+
+.diff-head{
+    display: flex;
+    justify-content: center;
+}
+
+.diff-head h1{
+    font-family: font;
+    font-size: 45px;
+    line-height: 60px;
+}
+
+.diff-cont{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.diff-cont div{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    background: black;
+    border-radius: 15px;
+    padding: 0 3rem;
+    padding-bottom: 1rem;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.7);
+}
+
+.diff-cont h3{
+    font-family: font;
+    font-size:29px;
+    text-align: center;
+    color: white;
+    margin: 5px 0 30px 0;
+}
+
+.diff-cont p{
+    font-family: font;
+    font-size: 25px;
+    color: gray;
+    text-align: center;
+    margin: 0;
+}
+
+.diff-cont img{
+    width: 75%;
+    max-width: 600px;
+    height: 50%;
+}
+
+.mob-class{
+    display: none;
+    text-align: center;
+}
+
+
+.footer{
+    display: flex;
+    background: black;
+    color:white;
+    border-radius: 20px 20px 0 0;
+    padding: 5rem 2rem;
+}
+
+.footer a{
+    color: gray;
+    text-decoration: underline;
+}
+
+.footer-cont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-cont div{
+    flex: 1;
+}
+
+.footer-cont h3{
+    text-decoration: underline;
+    cursor: pointer;
+    
+}
+
+.buttom-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttom-logo a{
+    font-family: logo;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+
+.ham{
+    display: flex;
+    padding: 0 0 0 1rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1100px) {
+    .navg{
+        display: none;
+    }
+
+    header{
+        padding: 0 1rem;
+    }
+
+    .ham{
+        display: flex;
+    }
+
+    .cont-text h1{
+        font-size: 40px;
+    }
+
+    .cont-text p{
+        font-size: 25px;
+    }
+
+    .diff-cont h3{
+        font-size:19px;
+        margin-bottom: 10px;
+        
+    }
+
+    .diff-cont p{
+        font-size: 19px;
+        line-height: 22px;
+        
+    }
+
+    .diff-head h1{
+        font-family: font;
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .mob-sign{
+        display: none;
+    }
+}
+
+@media screen and (max-width:890px) {
+
+    .mob-sign{
+        display: none;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .cont-text h1{
+        font-size: 48px;
+    }
+
+    .cont-text p{
+        font-size: 30px;
+        line-height: 35px;
+        
+    }
+
+    .cont-text a{
+        margin-top: 2rem;
+    }
+
+    .diff-head h1{
+        font-family: font;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .diff-cont{
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+
+    .diff-cont h3{
+        display: none;
+    }
+
+    .diff-cont img{
+        width: 75%;
+        max-width: 300px;
+        min-height: 300px;
+        height: 30%;
+    }
+
+    .diff-cont p{
+        display: none;
+    }
+
+    .diff-cont div{
+        flex: 1;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        padding: 0 3rem;
+    }
+
+    .mob-class{
+        font-family: font;
+        font-size:19px;
+        display: flex;
+        color: white;
+        
+    }
+}
+
+@media screen and (max-width:550px) {
+
+    .quott {
+        font-size: 19px;
+    }
+
+    .quote{
+        padding: 3rem 2rem;
+    }
+
+    .diff{
+        padding: 2rem 3rem;
+    }
+
+    .content p{
+        text-align: center;
+    }
+
+    .diff-head h1{
+        font-family: font;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .content a{
+        text-align: center;
+    }
+
+    .footer-cont{
+        flex-direction: column;
+        
+    }
+
+    .footer-cont div{
+        padding-left: 1rem;
+    }
+    
+    .ham{
+        display: flex;
+    }
+
+    .icons{
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 2rem;
+    }
+
+    .sign{
+        display: none;
+    }
+
+    .mob-sign{
+        display: flex;
+    }
+}
