@@ -1,4 +1,4 @@
-Quiz App
+Quiz App \n
 This is a simple quiz application created using HTML, CSS, and JavaScript. It allows users to take quizzes on various topics and provides instant feedback on their answers.
 
 Features:
