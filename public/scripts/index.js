@@ -19,7 +19,7 @@ const initApp = () =>{
     }
 
     const prepWind = () =>{
-        const prepTab = window.open('/public/prepQuizz.html')
+        const prepTab = window.open('prepQuizz.html')
     }
 
     mobileMenu.addEventListener('click', toggleMenu)
